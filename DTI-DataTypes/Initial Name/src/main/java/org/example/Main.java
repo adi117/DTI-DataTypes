@@ -17,8 +17,8 @@ public class Main {
 
         ArrayList<String> intialName = new ArrayList<>();
 
-        for (int i = 0; i < arrayName.length; i++) {
-            intialName.add(arrayName[i].split("")[0]);
+        for (String s : arrayName) {
+            intialName.add(s.split("")[0]);
         }
 
         System.out.println(String.join("", intialName).toUpperCase());
